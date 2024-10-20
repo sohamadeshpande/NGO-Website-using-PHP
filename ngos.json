@@ -1,0 +1,25 @@
+{
+    "ngos": [
+      {
+        "name": "Smile Foundation",
+        "mission": "Empowering underprivileged children and youth through education.",
+        "category": "Education",
+        "image": "https://media.licdn.com/dms/image/v2/C510BAQGm-PEy3JbXfQ/company-logo_200_200/company-logo_200_200/0/1631361498320?e=2147483647&v=beta&t=A2DmDtAXXZBV35WcVfmAE1vPqTWboyItlwgbpsr8l9s",
+        "description": "Smile Foundation works for the welfare of underprivileged children, their families, and the community, especially through education."
+      },
+      {
+        "name": "Child Rights and You (CRY)",
+        "mission": "Ensuring children’s rights across India.",
+        "category": "Child Rights",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Child_Rights_and_You_%28CRY%29_Organization_logo.png",
+        "description": "CRY works to ensure that children get their basic rights to education, nutrition, and healthcare."
+      },
+      {
+        "name": "UNICEF India",
+        "mission": "Advocating for the rights of children and youth.",
+        "category": "Health",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeT-SSS_jwK1DmUuORQ8IZvZhq_VObomyAhg&s",
+        "description": "UNICEF works with the government and other organizations to improve children's lives through health and education."
+      }
+    ]
+  }

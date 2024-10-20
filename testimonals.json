@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "name": "Emily Wilson",
+      "testimonial": "Volunteering with this organization has been a life-changing experience. I've had the opportunity to work with an amazing team and make a real difference in the lives of others. I've learned so much and grown as a person, and I'm grateful for the experience.",
+      "designation": "Volunteer"
+    },
+    {
+      "id": 2,
+      "name": "David Lee",
+      "testimonial": "I've been a donor to this organization for several years, and I've seen firsthand the impact that they have on the community. Their dedication to their mission is inspiring, and I'm proud to support their work. I've also had the opportunity to volunteer with them, and it's been a rewarding experience.",
+      "designation": "Donor"
+    },
+    {
+      "id": 3,
+      "name": "Sarah Taylor",
+      "testimonial": "I was struggling to make ends meet, but thanks to this organization, I was able to get back on my feet. They provided me with the support and resources I needed to get a job and start rebuilding my life. I'm grateful for their help and support, and I'm proud to be a part of their community.",
+      "designation": "Beneficiary"
+    }
+  ]

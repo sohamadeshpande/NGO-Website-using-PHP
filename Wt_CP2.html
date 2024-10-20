@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveSmiles - Explore NGOs</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="WT_CP_css.css">
+    <style>
+        /* Custom Styles */
+
+        /* Navbar Customization */
+        .bg-custom {
+            background-color: #f8f9fa; /* Light gray background */
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('your-hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        /* NGO Cards */
+        .ngo-card {
+            transition: transform 0.3s;
+        }
+
+        .ngo-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer Customization */
+        footer {
+            background-color: #343a40;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom shadow-sm sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="wt_Cp_newcss.html">SaveSmiles</a> <!-- Updated href -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                           href="wt_Cp_newcss.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="WT_CP1.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="WT_CP2.html">Explore NGOs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="WT_CP3.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ms-2"
+                           href="signup.php">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Hero Section (Optional) -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to SaveSmiles</h1>
+            <p>Connecting you with NGOs across India to make a meaningful impact.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Explore NGOs Across India</h2>
+
+            <!-- Search Bar -->
+            <div class="input-group mb-4">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search NGOs by name or category..." aria-label="Search NGOs">
+                <button class="btn btn-outline-secondary" type="button">Search</button>
+            </div>
+
+            <!-- NGO Cards Grid -->
+            <div class="row" id="ngo-container">
+                <!-- Sample NGO Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card ngo-card h-100">
+                        <img src="ngo1.jpg" class="card-img-top" alt="NGO Name">
+                        <div class="card-body">
+                            <h5 class="card-title">NGO Name</h5>
+                            <p class="card-text">Brief description of the NGO's mission and activities.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar blocks for more NGOs -->
+                <!-- Example -->
+                <div class="col-md-4 mb-4">
+                    <div class="card ngo-card h-100">
+                        <img src="ngo2.jpg" class="card-img-top" alt="NGO Name">
+                        <div class="card-body">
+                            <h5 class="card-title">NGO Name</h5>
+                            <p class="card-text">Brief description of the NGO's mission and activities.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more NGO cards as needed -->
+            </div>
+
+            <!-- No Results Message -->
+            <div id="no-results" class="text-center d-none">
+                <p class="mt-4">No NGOs found matching your search criteria.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p2>&copy; 2024 SaveSmiles. All Rights Reserved.</p2>
+            <div class="mt-2">
+                <!-- Social Media Icons -->
+                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

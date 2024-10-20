@@ -1,0 +1,11 @@
+[
+    {
+        "username": "testuser",
+        "password": "$2y$10$Wz...hashedPassword..."
+    },
+    {
+        "username": "a",
+        "email": "A@GMAIL.COM",
+        "password": "$2y$10$ILvbUezpAoTAqv5a60yFjOubGRWHxWaGZx21TeSOn9AFLkQGHoPIy"
+    }
+]

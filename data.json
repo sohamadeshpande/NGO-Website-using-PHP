@@ -1,0 +1,107 @@
+{
+    "sections": {
+      "education": [
+        {
+          "name": "Teach For India",
+          "description": "Committed to providing quality education to underprivileged children across India.",
+          "image": "data:image/png;base64,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",
+          "website": "https://www.teachforindia.org"
+        },
+        {
+          "name": "Pratham Education Foundation",
+          "description": "Focused on improving education quality, especially in primary schools.",
+          "image": "https://prathampune.org/images/pratham-pune.png",
+          "website": "https://www.pratham.org"
+        },
+        {
+          "name": "Smile Foundation",
+          "description": "Smile Foundation works for the welfare of underprivileged children, their families, and the community, especially through education.",
+          "image": "data:image/jpeg;base64,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",
+          "website": "https://www.smilefoundationindia.org"
+        },
+        {
+          "name": "Child Rights and You (CRY)",
+          "description": "CRY works to ensure that children get their basic rights to education, nutrition, and healthcare.",
+          "image": "https://cdn.cloudeq.com/wp-content/uploads/2023/08/18104009/Child-Rights-and-You.webp",
+          "website": "https://www.cry.org"
+        },
+        {
+          "name": "Akanksha Foundation",
+          "description": "Providing education to children from underserved communities.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR61GUegJzrxmWo9ApNpQAg7p85DvrRnsXXiw&s",
+          "website": "https://www.akanksha.org"
+        }
+      ],
+      "healthcare": [
+        
+        {
+          "name": "HelpAge India",
+          "description": "Focusing on the health and welfare of elderly people in India.",
+          "image": "https://www.lawctopus.com/wp-content/uploads/2015/03/helpage-india.jpg",
+          "website": "https://www.helpageindia.org"
+        },
+        {
+          "name": "UNICEF India",
+          "description": "UNICEF works with the government and other organizations to improve children's lives through health and education.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeT-SSS_jwK1DmUuORQ8IZvZhq_VObomyAhg&s",
+          "website": "https://www.unicef.org/india"
+        },
+        {
+          "name": "Doctors Without Borders",
+          "description": "Providing medical care to people in crisis zones and underserved areas.",
+          "image": "https://msfinindia.in/wp-content/uploads/2020/08/MSF-logo-1349X505.png",
+          "website": "https://www.msf.org"
+        },
+        {
+          "name": "Narayan Seva Sansthan",
+          "description": "Offering medical treatment and support to people with physical disabilities.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPrt95sUI1f3hAie5wzke1t3HDvaG3KcIsaA&s",
+          "website": "https://www.narayanseva.org"
+        }
+      ],
+      "environment": [
+        {
+          "name": "CSE India",
+          "description": "Center for Science and Environment working for sustainable development.",
+          "image": "https://upload.wikimedia.org/wikipedia/en/f/fb/Cse-logo.jpg",
+          "website": "https://www.cseindia.org"
+        },
+        {
+          "name": "David Suzuki Foundation",
+          "description": "Working for environmental conservation and climate action.",
+          "image": "https://upload.wikimedia.org/wikipedia/en/2/2d/David_Suzuki_Foundation_logo.png",
+          "website": "https://www.davidsuzuki.org"
+        },
+        {
+          "name": "Greenpeace India",
+          "description": "Campaigning for environmental protection and sustainable development.",
+          "image": "https://imagesvs.oneindia.com/img/2015/01/12-1421040252-greenpeace-logo.jpg",
+          "website": "https://www.greenpeace.org/india/"
+        },
+        {
+          "name": "Wildlife Trust of India",
+          "description": "Working for wildlife conservation and habitat protection.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/WTI_LOGO_Green_small.jpg",
+          "website": "https://www.wti.org.in"
+        }
+      ],
+      "social_welfare": [
+        {
+          "name": "Goonj",
+          "description": "Addressing basic needs and empowering marginalized communities.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0uOgv3epfK2dWnk-87Ul8Bcae-IemM1t2hA&s",
+          "website": "https://www.goonj.org"
+        },
+        {
+          "name": "Sewa International",
+          "description": "Focusing on disaster relief and social development.",
+          "image": "https://sac.sewainternational.org/Images/Logo%20-%20Sewa%20International.png",
+          "website": "https://www.sewainternational.org"
+        }
+      ]
+      
+    }
+
+    
+  }
+  

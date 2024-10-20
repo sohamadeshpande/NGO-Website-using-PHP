@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Head content -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveSmiles - Welcome</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+   
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #0056b3; /* A modern blue */
+            --accent-color: #ff4081;  /* A vibrant pink for accents */
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #F2F2F2;
+            color: #333333;
+            scroll-behavior: smooth;
+        }
+
+        /* Uniform heading styles */
+        h1, h2, h3, h5 {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Consistent paragraph styling */
+        p {
+            font-size: 1.1rem;
+            color: #333333;
+            margin-bottom: 1rem;
+        }
+
+        /* Consistent link styles */
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        /* Navbar styles */
+        .navbar.bg-custom {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgb(0, 0, 0);
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-left: 1rem;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero section styles */
+            .hero-section {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                height: 100vh; /* Full viewport height */
+                margin: 0;
+                padding: 0;
+            }
+
+            .hero-section video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%; /* Fill the container */
+                object-fit: cover; /* Scale video to cover container */
+            }
+            .hero-section .hero-caption h1 {
+                font-size: 3.5rem; /* Increased font size */
+                margin-bottom: 1rem;
+            }
+
+            .hero-section .hero-caption p {
+                font-size: 1.5rem; /* Increased font size */
+                margin-bottom: 0;
+            }
+
+            .hero-section .hero-caption  {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #F7FFF7;
+                text-align: center;
+                background: rgba(0, 0, 0, 0.7); /* Increased opacity for better readability */
+                padding: 4rem 2rem; /* Increased padding */
+                border-radius: 5px;
+                max-width: 80%; /* Limits the width on larger screens */
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            @media (max-width: 768px) {
+            .hero-section {
+                height: 70vh; /* Adjust height on smaller screens */
+            }
+
+            .hero-section .hero-caption {
+                padding: 2rem 1rem;
+            }
+
+            .hero-section .hero-caption h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-section .hero-caption p {
+                font-size: 1.25rem;
+            }
+        }
+        .hero-section .hero-caption h1,
+        .hero-section .hero-caption p {
+            text-shadow: 2px 2px 4px rgba(255, 0, 191, 0.7);
+        }
+        
+
+        /* Section styles */
+        section {
+            padding: 4rem 0;
+        }
+
+        /* Card styles */
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            text-align: center;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Statistics cards specific styles */
+        .statistics-cards .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .statistics-cards .col-md-4 {
+            display: flex;
+            flex: 1;
+        }
+
+        .statistics-cards .card {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .statistics-cards .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Button styles */
+        .btn-primary {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: var(--primary-color);
+            color: #F7FFF7;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 4px solid var(--accent-color);
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav .nav-item {
+                margin-left: 0;
+            }
+
+            .hero-section {
+                height: 50vh;
+            }
+        }
+        /* Featured NGOs Section Styles */
+        .featured-ngos-section .card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .featured-ngos-section .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .featured-ngos-section .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .featured-ngos-section .card-text {
+            margin-bottom: 1rem;
+        }
+
+        .featured-ngos-section .btn {
+            margin-top: auto;
+        }
+        .why-donate-section {
+    background-color: #f8f9fa; /* Light gray background for contrast */
+    padding: 4rem 0;
+    }
+
+    .why-donate-section h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .why-donate-section h3 {
+        color: var(--primary-color);
+        margin-top: 1rem;
+    }
+
+    .why-donate-section p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #666; /* Dark gray for better readability */
+    }
+
+    .why-donate-section img {
+        margin-bottom: 1rem;
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="wt_Cp_newcss.html">SaveSmiles</a>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Navigation items -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                           href="wt_Cp_newcss.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="WT_CP1.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="WT_CP2.html">Explore NGOs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="WT_CP3.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white"
+                           href="signup.php">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section with Video -->
+    <section class="hero-section">
+        <video autoplay loop muted playsinline>
+            <source src="donation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-caption">
+            <h1>Join Us in Saving Smiles</h1>
+            <h3>Making a difference in children's lives across India.</h3>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>SaveSmiles is committed to helping children in need across India by supporting NGOs that focus on
+                healthcare, education, and environmental sustainability. We believe every child deserves a healthy
+                life, quality education, and a safe environment. Our mission is to connect donors and volunteers
+                to these causes and make a lasting impact in the lives of the underprivileged.</p>
+        </div>
+    </section>
+
+   <!-- Why Your Donation Matters Section -->
+   <section class="why-donate-section bg-light py-5">
+    <div class="container">
+        <h2 class="text-center">Why Your Donation Matters</h2>
+        <p class="text-center">Your support is crucial in helping us continue our work. Every contribution makes a real difference in the following areas:</p><br>
+        <div class="row">
+            <!-- Education -->
+            <div class="col-md-4 text-center">
+                <img src="pics/cap.png" alt="Education Icon" style="width: 90px; height: auto;">
+                <h3>Education</h3>
+                <p>Donations support children's education, breaking poverty cycles and empowering future generations.</p>
+            </div>
+            <!-- Healthcare -->
+            <div class="col-md-4 text-center">
+                <img src="pics/healthcare.png" alt="Healthcare Icon" style="width: 80px; height: auto;">
+                <h3>Healthcare</h3>
+                <p>Your contributions support critical healthcare services for children and families in need.</p>
+            </div>
+            <!-- Environment -->
+            <div class="col-md-4 text-center">
+                <img src="pics/tress.png" alt="Environment Icon" style="width: 80px; height: auto;">
+                <h3>Environment</h3>
+                <p>Donations contribute to environmental sustainability efforts, creating a healthier planet for everyone.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Statistic Cards Section --><br>
+    <h2 class="text-center">Why NGOs are Important</h2>
+    <section class="statistics-cards py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card" style="background-color: #28a745; color: white;"> <!-- Custom green background -->
+                        <div class="card-body">
+                            <div class="stat-icon">
+                                <i class="bi bi-clipboard-check" style="font-size: 2rem;"></i>
+                            </div>
+                            <h3 class="text-justify" style="color: white;">NGOs step in to bridge these gaps by offering focused support to people who may otherwise be overlooked, such as remote villages or disadvantaged urban areas.</h3>
+                            <p class="text-justify" style="color: white;">Importance of NGOs </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="background-color: #ffc107; color: white;"> <!-- Custom yellow background -->
+                        <div class="card-body">
+                            <div class="stat-icon">
+                                <i class="bi bi-clipboard-check" style="font-size: 2rem;"></i>
+                            </div>
+                            <h3 class="text-justify" style="color: white;">NGOs advocate for policy changes, lobby governments, and conduct campaigns to shift public opinion, creating a more just and equitable society.</h3>
+                            <p class="text-justify" style="color: white;">Advocacy and Raising Awareness </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="background-color: #007bff; color: white;"> <!-- Custom blue background -->
+                        <div class="card-body">
+                            <div class="stat-icon">
+                                <i class="bi bi-bank" style="font-size: 2rem;"></i>
+                            </div>
+                            <h3 class="text-justify" style="color: white;">Their ability to pilot new ideas, test creative approaches, and scale them can lead to breakthroughs in development.</h3>
+                            <p class="text-justify" style="color: white;">Specialized Expertise and Innovation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Key Impact Statistics Section -->
+    <section class="statistics-section py-5">
+        <div class="container">
+            <h2 style="text-align: center;">Key Impact Statistics</h2><hr>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h3 id="counter1">0</h3>
+                    <p>Children educated through NGO initiatives</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 id="counter2">0</h3>
+                    <p>Lives saved with donations and our NGO's efforts</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 id="counter3">0</h3>
+                    <p>NGOs have partnered with SaveSmiles and we are looking forward to more</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section py-5">
+        <div class="container">
+            <h2 style="text-align: center;">Watch Our Story</h2>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/3SzazN2OrsQ" title="YouTube video" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+        <!-- Featured NGOs Section -->
+    <section class="featured-ngos-section bg-light">
+        <div class="container">
+            <h2 style="text-align: center;">Featured NGOs</h2>
+            <div class="row">
+                <!-- NGO 1 -->
+                <div class="col-md-4 d-flex">
+                    <div class="card flex-fill">
+                        <img src="https://www.smilefoundationindia.org/wp-content/uploads/2022/09/SMILE-FOUNDATION-LOGO-e1662456150120-1.png" class="card-img-top" alt="Smile Foundation">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Smile Foundation</h5>
+                            <p class="card-text flex-grow-1">A leading NGO focusing on healthcare and education for underprivileged children.</p>
+                            <a href="https://www.smilefoundationindia.org/" class="btn btn-primary mt-auto" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- NGO 2 -->
+                <div class="col-md-4 d-flex">
+                    <div class="card flex-fill">
+                        <img src="https://1000logos.net/wp-content/uploads/2021/03/UNICEF-logo.png" class="card-img-top" alt="UNICEF">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">UNICEF</h5>
+                            <p class="card-text flex-grow-1">Focusing on children's rights, UNICEF works to provide health, education, and protection for children.</p>
+                            <a href="https://www.unicef.org/" class="btn btn-primary mt-auto" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- NGO 3 -->
+                <div class="col-md-4 d-flex">
+                    <div class="card flex-fill">
+                        <img src="https://cdn.givind.org/static/images/giveindia-logo-v2.jpg" class="card-img-top" alt="Give India">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Give India</h5>
+                            <p class="card-text flex-grow-1">A platform for donating to various causes across India.</p>
+                            <a href="https://www.giveindia.org/" class="btn btn-primary mt-auto" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more NGO cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p2>&copy; 2024 SaveSmiles. All Rights Reserved.</p2>
+            <div class="mt-2">
+                <!-- Social Media Icons -->
+                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const counters = [
+            { id: 'counter1', target: 50000 },
+            { id: 'counter2', target: 10000 },
+            { id: 'counter3', target: 15 }
+        ];
+
+        counters.forEach(counter => {
+            const element = document.getElementById(counter.id);
+            const updateCounter = () => {
+                const target = counter.target;
+                const current = +element.innerText.replace('+', ''); // Remove '+' and convert to number for calculation
+                const increment = target / 200; // Adjust this value to change the speed
+
+                if (current < target) {
+                    element.innerText = `+${Math.ceil(current + increment)}`; // Keep updating with '+'
+                    setTimeout(updateCounter, 10); // Adjust timeout to change speed
+                } else {
+                    element.innerText = `+${target}`; // Ensure '+' stays in the final display
+                }
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        updateCounter();
+                        observer.unobserve(entry.target); // Stop observing once animated
+                    }
+                });
+            }, { threshold: 0.5 }); // Trigger when 50% visible
+
+            observer.observe(element);
+        });
+    });
+</script>
